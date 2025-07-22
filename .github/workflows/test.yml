@@ -1,0 +1,17 @@
+name: DemoEC2Instance: 
+on:
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-074bcbbba36789937"
+      BlockDeviceMappings: 
+      - DeviceName: "/dev/sdm"
+        Ebs: 
+          VolumeType: "io1"
+          Iops: "200"
+          DeleteOnTermination: "false"
+          VolumeSize: "20"
+      - DeviceName: "/dev/sdk"
+        NoDevice: {}
+      Tags:
+        - Key: "Name"
+          Value: "iac-scanning-demo"
