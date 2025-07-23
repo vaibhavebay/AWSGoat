@@ -1,5 +1,5 @@
-name: DemoEC2Instance: 
 on:
+name: DemoEC2Instance:
     Type: AWS::EC2::Instance
     Properties: 
       ImageId: "ami-074bcbbba36789937"
