@@ -1,5 +1,7 @@
-on:
-name: DemoEC2Instance:
+AWSTemplateFormatVersion: 2010-09-09
+Description: Iac Scanning Test
+Resources:
+DemoEC2Instance: 
     Type: AWS::EC2::Instance
     Properties: 
       ImageId: "ami-074bcbbba36789937"
