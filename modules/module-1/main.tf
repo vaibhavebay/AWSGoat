@@ -3603,7 +3603,7 @@ resource "aws_instance" "goat_instance" {
   subnet_id            = aws_subnet.goat_subnet.id
   security_groups      = [aws_security_group.goat_sg.id]
   tags = {
-    Name = "AWS_GOAT_DEV_INSTANCE"
+    Name = "AWS_GOAT_DEV_INSTANCE_DEMO"
   }
   user_data = data.template_file.goat_script.rendered
   depends_on = [
